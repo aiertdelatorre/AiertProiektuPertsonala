@@ -40,10 +40,4 @@ public interface DelitoRepository {
     String Cross_Street,
     double LAT,
     double LON);
-
-    /*@Query("{'year': ?0, 'category': ?1}")
-    Delito findByCategoryYear(String year, String category);
-
-    @Query("{'year': ?0, 'category': ?1}")
-    long deleteByYear(String year, String category);
-*/}
+}
