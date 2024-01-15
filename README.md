@@ -291,3 +291,49 @@ Dokumentu Bi honez gain application.properties dokumentua aldatu behhar izan dug
 # Datuen Iturria
 
 datuak hurengo linketik atera ditut [ https://catalog.data.gov/dataset/crime-data-from-2020-to-present/resource/5eb6507e-fa82-4595-a604-023f8a326099?inner_span=True](url) estatu batuetako gobernuko orrialde bat, izatez, datasetak 750.000 erregistro zituen baina batzuk kendu behar izan ditut, apiak ondo funtzionatzeko
+
+# Dependentziak
+
+Sartu ditudan dependentziak hurrengoak dira:
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <version>${mongodb.version}</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		
+
+	</dependencies>
+
+ aipatzeko garrantzitzuenak mongodb driverr eta springdoc-a dira lehenengoa mongo-ko datubasera konexioa ahalbidetzen du, eta bigarrenak swagger erabiltzeko balio du
